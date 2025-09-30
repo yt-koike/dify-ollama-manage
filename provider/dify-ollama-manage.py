@@ -1,4 +1,5 @@
 from typing import Any
+
 import requests
 from dify_plugin import ToolProvider
 from dify_plugin.errors.tool import ToolProviderCredentialValidationError
@@ -7,9 +8,7 @@ from dify_plugin.errors.tool import ToolProviderCredentialValidationError
 class DifyOllamaManageProvider(ToolProvider):
     def _validate_credentials(self, credentials: dict[str, Any]) -> None:
         try:
-            version = requests.get(
-                credentials.get("base_url", "").rstrip("/") + "/api/version"
-            )
+            version = requests.get(credentials.get("base_url", "").rstrip("/") + "/api/version")
             assert version.status_code == 200
         except Exception as e:
             raise ToolProviderCredentialValidationError(str(e))
