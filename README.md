@@ -6,5 +6,7 @@
 
 ### Description
 
+## Reference
 
-
+- Repository: https://github.com/yt-koike/dify-ollama-manage
+- Logo: Made on https://text-to-svg.com/
