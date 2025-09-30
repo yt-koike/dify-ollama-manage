@@ -5,8 +5,8 @@ identity:
     en_US: "Get Running"
 description:
   human:
-    en_US: "Show the running processes"
-  llm: "Show the running processes"
+    en_US: "Get the running processes"
+  llm: "Get the running processes"
 parameters:
   # No Parameters Required
 extra:

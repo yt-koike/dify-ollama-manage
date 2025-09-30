@@ -60,12 +60,12 @@ credentials_for_provider:
 
 tools:
   - tools/get_models.yaml
+  - tools/show_model.yaml
   - tools/pull_model.yaml
+  - tools/push_model.yaml
   - tools/delete_model.yaml
   - tools/generate.yaml
-  - tools/push_model.yaml
   - tools/get_process.yaml
-  - tools/show_model.yaml
 extra:
   python:
     source: provider/dify-ollama-manage.py
