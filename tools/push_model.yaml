@@ -1,8 +1,8 @@
 identity:
-  name: "pull_model"
+  name: "push_model"
   author: "yt-koike"
   label:
-    en_US: "Pull Model"
+    en_US: "Push Model"
 description:
   human:
     en_US: "Managing tools for Ollama servers"
@@ -19,4 +19,4 @@ parameters:
     type: string
 extra:
   python:
-    source: tools/pull_model.py
+    source: tools/push_model.py

@@ -9,4 +9,5 @@
 ## Reference
 
 - Repository: https://github.com/yt-koike/dify-ollama-manage
+- About Ollama API: https://docs.ollama.com/api
 - Logo: Made on https://text-to-svg.com/

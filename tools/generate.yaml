@@ -1,0 +1,40 @@
+identity:
+  name: "generate"
+  author: "yt-koike"
+  label:
+    en_US: "Generate"
+description:
+  human:
+    en_US: "Generate"
+  llm: "Managing tools for Ollama servers"
+parameters:
+  - name: model
+    form: llm
+    human_description:
+      en_US: Model
+    label:
+      en_US: Model
+    llm_description: model
+    required: true
+    type: string
+  - name: prompt
+    form: llm
+    human_description:
+      en_US: Prompt
+    label:
+      en_US: Prompt
+    llm_description: model
+    required: true
+    type: string
+  - name: keep_alive
+    form: llm
+    human_description:
+      en_US: Keep Alive
+    label:
+      en_US: Keep Alive
+    llm_description: model
+    required: false
+    type: number
+extra:
+  python:
+    source: tools/generate.py

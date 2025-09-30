@@ -66,6 +66,9 @@ tools:
   - tools/get_models.yaml
   - tools/pull_model.yaml
   - tools/delete_model.yaml
+  - tools/generate.yaml
+  - tools/push_model.yaml
+  - tools/get_process.yaml
 extra:
   python:
     source: provider/dify-ollama-manage.py
