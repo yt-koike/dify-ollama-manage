@@ -1,0 +1,29 @@
+identity:
+  name: "delete_model"
+  author: "yt-koike"
+  label:
+    en_US: "Show Model"
+description:
+  human:
+    en_US: "Show the details of the specified model"
+  llm: "Show the details of the specified model"
+parameters:
+  - name: model
+    form: llm
+    human_description:
+      en_US: Model
+    label:
+      en_US: Model
+    llm_description: model
+    required: true
+    type: string
+extra:
+  python:
+    source: tools/show_model.py
+output_schema:
+  type: object
+  properties:
+    model:
+      type: string
+      label:
+        en_US: Model
