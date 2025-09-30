@@ -33,17 +33,22 @@ class OllamaManager:
         result = requests.get(self.base_url + "/api/version")
         return result.json()["version"]
 
-    def pull_model(self, model: str) -> str:
+    def pull_model(self, model: str) -> None:
         data = {"model": model, "stream": False}
-        requests.post(self.base_url + "/api/pull", data=json.dumps(data))
-        return model
+        result = requests.post(self.base_url + "/api/pull", data=json.dumps(data))
+        if result.json()["status"] != "success":
+            raise Exception("Failed to pull")
 
     def push_model(self, model: str) -> str:
+        if model not in self.get_models():
+            raise Exception("Model not found.")
         data = {"model": model, "stream": False}
         requests.post(self.base_url + "/api/push", data=json.dumps(data))
         return model
 
     def delete_model(self, model: str):
+        if model not in self.get_models():
+            raise Exception("Model not found.")
         data = {"model": model}
         result = requests.delete(self.base_url + "/api/delete", data=json.dumps(data))
         if result.status_code != 200:

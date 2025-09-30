@@ -5,8 +5,8 @@ identity:
     en_US: "Get Models"
 description:
   human:
-    en_US: "Managing tools for Ollama servers"
-  llm: "Managing tools for Ollama servers"
+    en_US: "Get the list of available local models"
+  llm: "Get the list of available local models"
 parameters:
   # No Parameters Required
 extra:

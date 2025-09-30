@@ -1,14 +1,10 @@
 identity:
   author: "yt-koike"
-  name: "dify-ollama-manage"
+  name: "ollama-manage"
   label:
-    en_US: "dify-ollama-manage"
-    zh_Hans: "dify-ollama-manage"
-    pt_BR: "dify-ollama-manage"
+    en_US: "Ollama Manage"
   description:
     en_US: "Managing tools for Ollama servers"
-    zh_Hans: "Managing tools for Ollama servers"
-    pt_BR: "Managing tools for Ollama servers"
   icon: "icon.svg"
 
 credentials_for_provider:
@@ -69,6 +65,7 @@ tools:
   - tools/generate.yaml
   - tools/push_model.yaml
   - tools/get_process.yaml
+  - tools/show_model.yaml
 extra:
   python:
     source: provider/dify-ollama-manage.py

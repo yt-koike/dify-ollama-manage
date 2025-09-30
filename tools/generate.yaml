@@ -5,7 +5,7 @@ identity:
     en_US: "Generate"
 description:
   human:
-    en_US: "Generate"
+    en_US: "Complete the prompt"
   llm: "Managing tools for Ollama servers"
 parameters:
   - name: model
