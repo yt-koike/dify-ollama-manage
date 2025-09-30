@@ -1,0 +1,21 @@
+identity:
+  name: "get_running"
+  author: "yt-koike"
+  label:
+    en_US: "Get Running"
+description:
+  human:
+    en_US: "Managing tools for Ollama servers"
+  llm: "Managing tools for Ollama servers"
+parameters:
+  # No Parameters Required
+extra:
+  python:
+    source: tools/get_process.py
+output_schema:
+  type: object
+  properties:
+    processes:
+      type: array[string]
+      label:
+        en_US: Processes

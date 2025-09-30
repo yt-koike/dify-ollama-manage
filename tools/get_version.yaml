@@ -1,0 +1,21 @@
+identity:
+  name: "get_version"
+  author: "yt-koike"
+  label:
+    en_US: "Get Version"
+description:
+  human:
+    en_US: "Managing tools for Ollama servers"
+  llm: "Managing tools for Ollama servers"
+parameters:
+  # No Parameters Required
+extra:
+  python:
+    source: tools/get_version.py
+output_schema:
+  type: object
+  properties:
+    version:
+      type: string
+      label:
+        en_US: Version

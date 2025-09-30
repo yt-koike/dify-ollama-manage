@@ -1,0 +1,29 @@
+identity:
+  name: "pull_model"
+  author: "yt-koike"
+  label:
+    en_US: "Pull Model"
+description:
+  human:
+    en_US: "Managing tools for Ollama servers"
+  llm: "Managing tools for Ollama servers"
+parameters:
+  - name: model
+    form: llm
+    human_description:
+      en_US: Model
+    label:
+      en_US: Model
+    llm_description: model
+    required: true
+    type: string
+extra:
+  python:
+    source: tools/pull_model.py
+output_schema:
+  type: object
+  properties:
+    model:
+      type: string
+      label:
+        en_US: Model
