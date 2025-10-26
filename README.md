@@ -35,6 +35,14 @@ Optionally, you can delete the model you downloaded to save disk space.
 Even though the Generate node can generate a response to a given prompt,
 it is highly recommended to use the default LLM node which has more parameters you can edit.
 
+### Required APIs and Credentials
+
+This plugin does not require any API Keys as Ollama servers generally does not need them.
+
+### Connection requirements
+
+This plugin needs an HTTP access to a Ollama server.
+
 ### Reference
 
 - Repository: https://github.com/yt-koike/dify-ollama-manage
