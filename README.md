@@ -24,6 +24,17 @@ Ollama Manage has the following nodes.
 - Generate: Completes the prompt
 - Get Running: Gets the running processes
 
+### Example Usage
+
+![example](_assets/example_workflow.png)
+
+The image above show an example workflow to use this Ollama Manage plugin.
+You can pull(download) a model with the Pull Model node and use it with the Generate node.
+Optionally, you can delete the model you downloaded to save disk space.
+
+Even though the Generate node can generate a response to a given prompt,
+it is highly recommended to use the default LLM node which has more parameters you can edit.
+
 ### Reference
 
 - Repository: https://github.com/yt-koike/dify-ollama-manage
